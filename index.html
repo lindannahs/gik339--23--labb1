@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labb1</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Labb 1 - Grupp 23</title>
 </head>
 <body>
     <div class="wrapper">
         <h1>Labb 1 - Grupp 23</h1>
-        <section>
-            <div class="box">
-
-
-            </div>
-        </section>
+        <div class="box">
+            <form class="settings" id="settings">
+                <div class="text">
+                    <p>Färg</p>
+                    <p>Innehåll</p>
+                    <p>Stil på box</p>
+                </div>
+                <div class="labels">
+                    <label class="input" for="color"></label>
+                    <input type="text" class="textfield" name="color" id="color"/>
+                    <label class="input" for="content"></label>
+                    <input type="text" class="textfield" name="content" id="content"/>
+                    <label class="input"></label>
+                    <input type="checkbox" class="checkbox" name="divStyle" id="divStyle"/>
+                </div>
+                <div class="button_box">
+                <button class="delete">Radera</button>
+                </div>
+                <div class="results" id="results">
+                    <div class="output">
+                        <p>Resultat</p>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    <script defer src="script.js"></script>
 </body>
 </html>
