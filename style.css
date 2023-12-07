@@ -30,6 +30,7 @@ p {
    color: white;
 }
 
+
 .text {
     width: 200px;
 
@@ -73,12 +74,9 @@ p {
    
 }
 
-.results {
-    width: 453px;
-    height: 58px;
+.output p {
+    margin: 0px;
 }
-
-
 
 .settings {
     width: 700px;

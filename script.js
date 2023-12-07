@@ -1,23 +1,22 @@
 // GRUPP 23 --- LABB 1
-//-------------------Uppgift 4-------------------//
-const checkbox = document.querySelector('.checkbox');
-const textFields = document.querySelectorAll('.textfield'); 
-const deleteButton = document.querySelector('button'); 
-const results = document.getElementById('results'); 
 
-const output = document.getElementsByClassName('output');
-//-----------------------------------------------//
+//-------------------Uppgift 4-------------------//
+const checkbox = document.querySelector('.checkbox'); // hämtad via klassnamn
+const textFields = document.querySelectorAll('.textfield'); // hämtad via klassnamn
+const deleteButton = document.querySelector('button'); // hämtad via taggnamn
+const results = document.getElementById('results'); // hämtad via id 
+
+
 
 //-------------------Uppgift 5-------------------//
 function handleText(e) {
-    console.log(e.target); 
+    const targetName = e.target.name;
     const fieldContent = textFields[1].value;
-    targetName = e.target.name;
-    if (targetName == 'content') {
+    console.log("textfältet som skrevs i var: " + targetName); // content eller color beroende på textfält
+    if (targetName === 'content') {
         document.querySelector('.output').innerHTML = fieldContent;
     }
 }
-//-----------------------------------------------//
 
 
 //-------------------Uppgift 6-------------------//
@@ -33,7 +32,5 @@ deleteButton.addEventListener('click', (e) => {
 });
 
 textFields.forEach((field) => field.addEventListener('input', handleText));
-//-----------------------------------------------//
-
 
 
